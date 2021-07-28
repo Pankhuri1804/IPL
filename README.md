@@ -1,6 +1,6 @@
 # IPL
 To access the running application:
-1.	Please import the postman export to your machine.
+1.	Please import the postman export to your machine<IPL.postman_collection.json>.
 2.	Open the imported collection and see all the API’s.
 3.	Hit all of them to get the results.
 
@@ -15,6 +15,7 @@ Manual steps for application installation:
 7. Go to “IPL” directory: cd IPL/
 8. You can build a local docker image: sudo docker build --tag iplanalysis .
 9. You can run the docker container locally: docker run -d -p 5000:5000 iplanalysis
+10. To test the API's a list of URL's are mentioned in the sheet<IPLAPIinfo.xlsx>
 
 
 Begin of the application
