@@ -69,8 +69,8 @@ def fielderwithmostcaughts(yr):
     match = d.getmatchesdata()
     deliveries = d.getdeliveriesdata()
     consideredmatch = match[match['season'] == yr]['id']
-    sumdata = deliveries[(deliveries['match_id'].isin(consideredmatch)) & (deliveries['player_dismissed'].notnull())].groupby('bowler')['bowler'].value_counts()
+    sumdata = deliveries[(deliveries['match_id'].isin(consideredmatch)) & (deliveries['player_dismissed'].notnull())].groupby('fielder')['fielder'].value_counts()
     bowler = sumdata.idxmax()[0]
     maxwkt = sumdata.max()
-    returnval = {"Bowler" : bowler, "TotalWickets": str(maxwkt)}
+    returnval = {"Fielder" : bowler, "TotalWickets": str(maxwkt)}
     return returnval
