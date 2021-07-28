@@ -6,3 +6,6 @@ def getdeliveriesdata():
 def getmatchesdata():
     return pd.read_csv("data/matches.csv")
 
+def getmatchdatabyyr(yr):
+    return getmatchesdata()[getmatchesdata()['season'] == yr]    
+
