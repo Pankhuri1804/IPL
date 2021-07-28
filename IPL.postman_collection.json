@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "0d1ca8b3-ed21-4645-9af9-edbe20e114e6",
+		"name": "IPL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "top 4 teams in a year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/top4team?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"top4team"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maximum toss winner team",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/maxtosswinnerteam?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"maxtosswinnerteam"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maximum number of times player of the match",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/maxplayerofmatch?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"maxplayerofmatch"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Maximum matches won by a team in a season",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/maxwinnerteam?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"maxwinnerteam"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top location for winner team",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/locationforwinnerteam?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"locationforwinnerteam"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "% of batting decision in toss",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/percentofbatting?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"percentofbatting"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "maximum match hosted location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/maxmatchlocation?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"maxmatchlocation"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Highest margin in win by run",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/highestmarginbyrunwinner?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"highestmarginbyrunwinner"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Highest margin in win by wicket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/highestmarginwktwin?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"highestmarginwktwin"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count of teams winning toss and match",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/getwinnerteambytossandmatch?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"getwinnerteambytossandmatch"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Batsman with most runs scored in a season",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/fielderwithmostcaughts?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"fielderwithmostcaughts"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fielder with most caughts in a season",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://3.227.242.75:5000/fielderwithmostcaughts?yr=2008",
+					"protocol": "http",
+					"host": [
+						"3",
+						"227",
+						"242",
+						"75"
+					],
+					"port": "5000",
+					"path": [
+						"fielderwithmostcaughts"
+					],
+					"query": [
+						{
+							"key": "yr",
+							"value": "2008"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
