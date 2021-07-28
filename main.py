@@ -66,6 +66,20 @@ def getwinnerteambytossandmatch():
     teamnm = ser.getwinnerteambytossandmatch(int(yr))
     return json.dumps(teamnm.to_dict())
 
+@app.route("/batsmanwithmostruns")
+def batsmanwithmostruns():
+    yr = request.args.get("yr")
+    btmndata = ser.batsmanwithmostruns(int(yr))
+    print(btmndata)
+    return json.dumps(btmndata)
+
+@app.route("/fielderwithmostcaughts")
+def fielderwithmostcaughts():
+    yr = request.args.get("yr")
+    bowlerdata = ser.fielderwithmostcaughts(int(yr))
+    print(bowlerdata)
+    return json.dumps(bowlerdata) 
+
 app.run(host ='0.0.0.0', port = 5000, debug = True)
 
 
