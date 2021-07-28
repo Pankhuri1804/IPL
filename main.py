@@ -66,6 +66,6 @@ def getwinnerteambytossandmatch():
     teamnm = ser.getwinnerteambytossandmatch(int(yr))
     return json.dumps(teamnm.to_dict())
 
-app.run()
+app.run(host ='0.0.0.0', port = 5000, debug = True)
 
 
