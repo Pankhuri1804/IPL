@@ -55,16 +55,22 @@ def getwinnerteambytossandmatch(yr):
     teamnm = data[(data['season'] == yr) & (data['toss_winner'] == data['winner'])].groupby('winner')['winner'].count()
     return teamnm     
 
-def batsmanwithmostruns():
-    #match = d.getmatchesdata()
+def batsmanwithmostruns(yr):
+    match = d.getmatchesdata()
     deliveries = d.getdeliveriesdata()
-    rundata = deliveries[deliveries['match_id'] == 1].groupby('batsman')['total_runs'].sum('total_runs')
-    print(rundata)
-    rundata
-    return -1    
+    consideredmatch = match[match['season'] == yr]['id']
+    sumdata = deliveries[deliveries['match_id'].isin(consideredmatch)].groupby('batsman')['total_runs'].sum('total_runs')
+    maxrunplayer = sumdata.idxmax()
+    maxrun = sumdata.max()
+    returnval = {"Player" : maxrunplayer, "TotalRuns": str(maxrun)}
+    return returnval   
 
-def main():
-    print(batsmanwithmostruns())
-
-if __name__ == "__main__":
-    main()
+def fielderwithmostcaughts(yr):
+    match = d.getmatchesdata()
+    deliveries = d.getdeliveriesdata()
+    consideredmatch = match[match['season'] == yr]['id']
+    sumdata = deliveries[(deliveries['match_id'].isin(consideredmatch)) & (deliveries['player_dismissed'].notnull())].groupby('bowler')['bowler'].value_counts()
+    bowler = sumdata.idxmax()[0]
+    maxwkt = sumdata.max()
+    returnval = {"Bowler" : bowler, "TotalWickets": str(maxwkt)}
+    return returnval
